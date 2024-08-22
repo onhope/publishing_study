@@ -1,0 +1,26 @@
+body {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* 스크롤 스냅 설정 */
+.container {
+  overflow: auto;
+    /* 세로 방향으로 스크롤할 때 빠르게 넘기거나 멈출 수 있음 */
+    /* 풀 스크린 레이아웃으로 구성한 웹 사이트에 적용을 하면 좋음 */
+  scroll-snap-type: y;
+  height: 100vh;
+}
+.area {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* 각 영역 배경 색 */
+.area:nth-child(even) {
+  background-color: #ffce53;
+}
+.area:nth-child(odd) {
+  background-color: #0bd;
+}

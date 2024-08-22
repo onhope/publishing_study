@@ -1,0 +1,25 @@
+body {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* 스크롤 스냅 설정 */
+.container {
+  overflow: auto;
+  /* mandatory를 추가하면 현재 표시되는 영역이나 다음 영역 등 어느 한 부분이 표시 */
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.area {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+/* 각 영역 배경 색 */
+.area:nth-child(even) {
+  background-color: #ffce53;
+}
+.area:nth-child(odd) {
+  background-color: #0bd;
+}

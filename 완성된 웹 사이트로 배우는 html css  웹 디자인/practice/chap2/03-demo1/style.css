@@ -1,0 +1,6 @@
+body {
+  /* 각각의 이미지를 불러옴. 쉼표로 구분함 */
+  background: url("./images/bg1.png"), url("./images/bg2.png"); 
+  background-repeat: no-repeat;
+  background-position: left top, right top;
+}

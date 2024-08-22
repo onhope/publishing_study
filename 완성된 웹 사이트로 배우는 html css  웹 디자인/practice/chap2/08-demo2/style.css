@@ -1,0 +1,29 @@
+body {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* 스크롤 스냅 설정 */
+.container {
+  overflow: auto;
+  /* 가로 방향으로 스크롤할 때 빠르게 지나가거나 멈추게 할 수 있음 */
+  /* 캐러셀 이미지 등에 사용할 수 있으며, 모바일용 화면 구성에도 적합 */
+  /* 요소의 양옆은 플렉스 박스를 사용 */
+  scroll-snap-type: x;
+  display: flex;
+}
+.area {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 50vw;
+  flex: none;
+}
+
+/* 각 영역 배경 색 */
+.area:nth-child(even) {
+  background-color: #ffce53;
+}
+.area:nth-child(odd) {
+  background-color: #0bd;
+}

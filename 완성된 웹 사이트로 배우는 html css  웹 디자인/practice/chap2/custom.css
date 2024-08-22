@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero {
+    background: url(./img.jpg);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.title {
+    color: black;
+    font-size: 64px;
+    margin-bottom: 10vh;
+    background-color: greenyellow;
+}
+
+p {
+    padding: 10px 20px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.content {
+    background:  url(./img2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.con {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}

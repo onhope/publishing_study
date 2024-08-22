@@ -1,0 +1,30 @@
+body {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* 스크롤 스냅 설정 */
+.container {
+  overflow: auto;
+  /* 가로와 세로 모두 이동하며 스크롤의 움직임을 제어 */
+  /* 타일형 레이아웃 등 여러가지 요소로 구성된 웹 사이트에 사용하기 좋음 */
+  /* 레이아웃을 구성할 때 grid를 사용 */
+  scroll-snap-type: both;
+  display: grid;
+  grid-template-columns: repeat(5, 42vw);
+  grid-template-rows: repeat(3, 42vw);
+  gap: 1rem;
+  height: 100vh;
+}
+.area {
+  scroll-snap-align: start;
+}
+
+/* 각 영역 배경 색 */
+.area:nth-child(even) {
+  background-color: #ffce53;
+}
+.area:nth-child(odd) {
+  background-color: #0bd;
+}
